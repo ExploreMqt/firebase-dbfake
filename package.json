@@ -1,0 +1,26 @@
+{
+  "name": "firebase-dbfake",
+  "version": "1.0.0",
+  "description": "A fake object library to aid in unit testing code that has Firebase as a data store.",
+  "main": ".lib/fakes.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha 'test/**/*.js' -w",
+    "lint": "eslint ./lib ./test ./data"
+  },
+  "keywords": [
+    "['firebase'",
+    "'fake'",
+    "'mock']"
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "git@github.com:ExploreMqt/firebase-dbfake.git"
+  },
+  "author": "\"Jim Argeropoulos <tenholeharp@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.0.1",
+    "mocha": "^2.5.3"
+  }
+}
