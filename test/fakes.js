@@ -129,17 +129,28 @@
 			it('should have a reference function', function(){
 				sut.should.have.property('reference').a('function')
 			})
+			describe('key:', function(){
+				it('should have a key property', function(){
+					sut.reference().should.have.property('key').a('string')
+				})
 
-			it('should have a key property', function(){
-				sut.reference().should.have.property('key').a('string')
+				it('should default the key if not supplied', function(){
+					sut.reference().key.should.equal('someKey')
+				})
+
+				it('should use the key supplied', function(){
+					sut.reference({key:'foo'}).key.should.equal('foo')
+				})
 			})
+			describe('parent', function(){
+				it('should have a parent property', function(){
+					sut.reference().should.have.property('parent').a('object')
+				})
 
-			it('should default the key if not supplied', function(){
-				sut.reference().key.should.equal('someKey')
-			})
-
-			it('should use the key supplied', function(){
-				sut.reference('foo').key.should.equal('foo')
+				it('should allow you to pass in a parent', function(){
+					const myParent = {}
+					sut.reference({parent: myParent}).parent.should.equal(myParent)
+				})
 			})
 		})
 	})
