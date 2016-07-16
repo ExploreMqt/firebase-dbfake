@@ -152,6 +152,19 @@
 					sut.reference({parent: myParent}).parent.should.equal(myParent)
 				})
 			})
+			describe('root', function(){
+				it('should have a root property', function(){
+					sut.reference().should.have.property('root').a('string')
+				})
+
+				it('should default to the docs value for an example', function(){
+					sut.reference().root.should.equal('https://sample-app.firebaseio.com')
+				})
+
+				it('should let the caller override the value', function(){
+					sut.reference({root: 'http://superior.firebaseio.com'}).root.should.equal('http://superior.firebaseio.com')
+				})
+			})
 		})
 	})
 }())
