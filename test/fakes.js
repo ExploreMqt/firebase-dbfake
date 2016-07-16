@@ -57,6 +57,12 @@
 					sut.snapshot({}, 'abc').key.should.equal('abc')
 				})
 			})
+
+			describe('ref', function(){
+				it('should have a ref property', function(){
+					sut.snapshot({}).should.have.property('ref').a('object')
+				})
+			})
 		})
 	})
 }())
