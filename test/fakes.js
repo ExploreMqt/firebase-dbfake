@@ -129,6 +129,18 @@
 			it('should have a reference function', function(){
 				sut.should.have.property('reference').a('function')
 			})
+
+			it('should have a key property', function(){
+				sut.reference().should.have.property('key').a('string')
+			})
+
+			it('should default the key if not supplied', function(){
+				sut.reference().key.should.equal('someKey')
+			})
+
+			it('should use the key supplied', function(){
+				sut.reference('foo').key.should.equal('foo')
+			})
 		})
 	})
 }())
