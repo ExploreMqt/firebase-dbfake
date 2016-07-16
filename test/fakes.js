@@ -64,5 +64,26 @@
 				})
 			})
 		})
+
+		describe('resolveSnapshot:', function (){
+			it('should have a resolveSnapshot function', function (){
+				sut.should.have.property('resolveSnapshot').a('function')
+			})
+
+			it('should return a promise', function(){
+				sut.resolveSnapshot({}).should.be.a('promise')
+			})
+
+			it('should resolve a snapshot', function(done){
+				sut.resolveSnapshot({})
+				.then(result => {
+					result.should.have.property('exists').a('function')
+					result.should.have.property('key').a('string')
+					result.should.have.property('ref').a('object')
+					result.should.have.property('val').a('function')
+					done()
+				})
+			})
+		})
 	})
 }())
