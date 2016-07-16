@@ -12,9 +12,9 @@
     "'fake'",
     "'mock']"
   ],
-  "repository" : {
-    "type" : "git",
-    "url" : "git@github.com:ExploreMqt/firebase-dbfake.git"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ExploreMqt/firebase-dbfake.git"
   },
   "author": "\"Jim Argeropoulos <tenholeharp@gmail.com>",
   "license": "ISC",
@@ -22,5 +22,8 @@
     "chai": "^3.5.0",
     "eslint": "^3.0.1",
     "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1"
   }
 }
