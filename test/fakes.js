@@ -124,5 +124,11 @@
 				})
 			})
 		})
+
+		describe('reference:', function(){
+			it('should have a reference function', function(){
+				sut.should.have.property('reference').a('function')
+			})
+		})
 	})
 }())
