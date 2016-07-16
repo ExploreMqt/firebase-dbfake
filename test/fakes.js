@@ -84,6 +84,45 @@
 					done()
 				})
 			})
+
+			it('should resovle to the value provided', function(done){
+				const	x = {},
+						key = 'mykey'
+				sut.resolveSnapshot(x, key)
+				.then(snapshot => {
+					snapshot.val().should.equal(x)
+					snapshot.key.should.equal(key)
+					done()
+				})
+			})
+		})
+
+		describe('memoizeSnapshot:', function(){
+			it('should have a memoizeSnapshot function', function(){
+				sut.should.have.property('memoizeSnapshot').a('function')
+			})
+
+			it('should produce a function', function(){
+				sut.memoizeSnapshot({}).should.be.a('function')
+			})
+
+			it('should return a promise from the result', function(){
+				sut.memoizeSnapshot({})().should.be.a('promise')
+			})
+
+			it('should resolve the same value multiple times', function(done){
+				const	x = {},
+						memoized = sut.memoizeSnapshot(x)
+				memoized()
+				.then(snapshot => {
+					snapshot.val().should.equal(x)
+					memoized()
+					.then(snapshot => {
+						snapshot.val().should.equal(x)
+						done()
+					})
+				})
+			})
 		})
 	})
 }())
