@@ -142,7 +142,7 @@
 					sut.reference({key:'foo'}).key.should.equal('foo')
 				})
 			})
-			describe('parent', function(){
+			describe('parent:', function(){
 				it('should have a parent property', function(){
 					sut.reference().should.have.property('parent').a('object')
 				})
@@ -152,7 +152,7 @@
 					sut.reference({parent: myParent}).parent.should.equal(myParent)
 				})
 			})
-			describe('root', function(){
+			describe('root:', function(){
 				it('should have a root property', function(){
 					sut.reference().should.have.property('root').a('string')
 				})
@@ -163,6 +163,29 @@
 
 				it('should let the caller override the value', function(){
 					sut.reference({root: 'http://superior.firebaseio.com'}).root.should.equal('http://superior.firebaseio.com')
+				})
+			})
+			describe('child:', function(){
+				it('should have a child function', function(){
+					sut.reference().should.have.property('child').a('function')
+				})
+
+				it('should return a reference with the key given', function(){
+					const	parent = sut.reference()
+					const	child = parent.child('eino')
+
+					child.should.have.property('key')
+						.that.equals('eino')
+					child.should.have.property('root')
+				})
+
+				it('should return a reference with the correct parent', function(){
+					//Yeah, I know too much implementation for a fake, but...
+					const	parent = sut.reference()
+					const	child = parent.child('eino')
+
+					child.should.have.property('parent')
+						.that.equals(parent)
 				})
 			})
 		})
