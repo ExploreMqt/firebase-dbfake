@@ -188,6 +188,17 @@
 						.that.equals(parent)
 				})
 			})
+			describe('endAt', function(){
+				it('should have an endAt function', function(){
+					sut.reference().should.have.property('endAt').a('function')
+				})
+
+				it('should return the reference', function(){
+					const ref = sut.reference()
+
+					ref.endAt().should.equal(ref)
+				})
+			})
 		})
 	})
 }())
