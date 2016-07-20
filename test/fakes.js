@@ -210,6 +210,17 @@
 					ref.equalTo().should.equal(ref)
 				})
 			})
+			describe('limitToFirst', function(){
+				it('should have an limitToFirst function', function(){
+					sut.reference().should.have.property('limitToFirst').a('function')
+				})
+
+				it('should return the reference', function(){
+					const ref = sut.reference()
+
+					ref.limitToFirst().should.equal(ref)
+				})
+			})
 		})
 	})
 }())
