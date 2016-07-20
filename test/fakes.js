@@ -232,6 +232,11 @@
 					ref.limitToLast().should.equal(ref)
 				})
 			})
+			describe('off', function(){
+				it('should have an off function', function(){
+					sut.reference().should.have.property('off').a('function')
+				})
+			})
 		})
 	})
 }())
