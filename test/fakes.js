@@ -221,6 +221,17 @@
 					ref.limitToFirst().should.equal(ref)
 				})
 			})
+			describe('limitToLast', function(){
+				it('should have an limitToLast function', function(){
+					sut.reference().should.have.property('limitToLast').a('function')
+				})
+
+				it('should return the reference', function(){
+					const ref = sut.reference()
+
+					ref.limitToLast().should.equal(ref)
+				})
+			})
 		})
 	})
 }())
