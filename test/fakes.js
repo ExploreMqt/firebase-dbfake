@@ -260,6 +260,20 @@
 					})
 				})
 			})
+			describe('onDisconnect', function(){
+				//todo
+			})
+			describe('orderByChild', function(){
+				it('should have an orderByChild function', function(){
+					sut.reference().should.have.property('orderByChild').a('function')
+				})
+
+				it('should return the reference', function(){
+					const ref = sut.reference()
+
+					ref.orderByChild().should.equal(ref)
+				})
+			})
 		})
 	})
 }())
