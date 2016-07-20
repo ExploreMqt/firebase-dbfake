@@ -199,6 +199,17 @@
 					ref.endAt().should.equal(ref)
 				})
 			})
+			describe('equalTo', function(){
+				it('should have an equalTo function', function(){
+					sut.reference().should.have.property('equalTo').a('function')
+				})
+
+				it('should return the reference', function(){
+					const ref = sut.reference()
+
+					ref.equalTo().should.equal(ref)
+				})
+			})
 		})
 	})
 }())
