@@ -237,6 +237,11 @@
 					sut.reference().should.have.property('off').a('function')
 				})
 			})
+			describe('on', function(){
+				it('should have an on function', function(){
+					sut.reference().should.have.property('on').a('function')
+				})
+			})
 		})
 	})
 }())
