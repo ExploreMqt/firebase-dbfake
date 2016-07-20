@@ -242,6 +242,24 @@
 					sut.reference().should.have.property('on').a('function')
 				})
 			})
+			describe('once', function(){
+				it('should have an once function', function(){
+					sut.reference().should.have.property('once').a('function')
+				})
+
+				it('should return a promise', function(){
+					sut.reference().once().should.be.a('promise')
+				})
+
+				it('should resolve a snapshot', function(done){
+					sut.reference().once().then(snapshot => {
+						snapshot.should.have.property('exists').a('function')
+						snapshot.should.have.property('key').a('string')
+						snapshot.should.have.property('val').a('function')
+						done()
+					})
+				})
+			})
 		})
 	})
 }())
