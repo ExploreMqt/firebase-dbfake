@@ -307,6 +307,30 @@
 					ref.orderByValue().should.equal(ref)
 				})
 			})
+			describe('push', function(){
+				it('should have an push function', function(){
+					sut.reference().should.have.property('push').a('function')
+				})
+
+				it('should create a reference', function(){
+					const	parent = sut.reference(),
+							child = parent.push({})
+
+					parent.should.not.equal(child)
+				})
+
+				it('should have a parent property that points to creator', function(){
+					const	parent = sut.reference(),
+							child = parent.push({})
+					parent.should.not.equal(child)
+					child.should.have.property('parent')
+						.that.equals(parent)
+				})
+
+				it('should use the default key generator if none suplied', function(){
+					sut.reference().push({}).key.should.equal('someKey1')
+				})
+			})
 		})
 	})
 }())
