@@ -296,6 +296,17 @@
 					ref.orderByPriority().should.equal(ref)
 				})
 			})
+			describe('orderByValue', function(){
+				it('should have an orderByValue function', function(){
+					sut.reference().should.have.property('orderByValue').a('function')
+				})
+
+				it('should return the reference', function(){
+					const ref = sut.reference()
+
+					ref.orderByValue().should.equal(ref)
+				})
+			})
 		})
 	})
 }())
