@@ -355,8 +355,17 @@
 					sut.reference().should.have.property('set').a('function')
 				})
 
-				it('should return the reference', function(){
+				it('should return a promise', function(){
 					sut.reference().set().should.be.a('promise')
+				})
+			})
+			describe('setPriority', function(){
+				it('should have an setPriority function', function(){
+					sut.reference().should.have.property('setPriority').a('function')
+				})
+
+				it('should return the reference', function(){
+					sut.reference().setPriority().should.be.a('promise')
 				})
 			})
 		})
