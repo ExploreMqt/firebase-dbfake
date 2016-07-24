@@ -341,6 +341,15 @@
 					subject.push({}).key.should.equal('two')
 				})
 			})
+			describe('remove', function(){
+				it('should have an push function', function(){
+					sut.reference().should.have.property('remove').a('function')
+				})
+
+				it('should resolve a promise', function(){
+					sut.reference().remove().should.be.a('promise')
+				})
+			})
 		})
 	})
 }())
