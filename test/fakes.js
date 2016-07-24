@@ -356,9 +356,7 @@
 				})
 
 				it('should return the reference', function(){
-					const ref = sut.reference()
-
-					ref.set().should.equal(ref)
+					sut.reference().set().should.be.a('promise')
 				})
 			})
 		})
