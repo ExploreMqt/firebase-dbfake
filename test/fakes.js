@@ -342,12 +342,23 @@
 				})
 			})
 			describe('remove', function(){
-				it('should have an push function', function(){
+				it('should have an remove function', function(){
 					sut.reference().should.have.property('remove').a('function')
 				})
 
 				it('should resolve a promise', function(){
 					sut.reference().remove().should.be.a('promise')
+				})
+			})
+			describe('set', function(){
+				it('should have an set function', function(){
+					sut.reference().should.have.property('set').a('function')
+				})
+
+				it('should return the reference', function(){
+					const ref = sut.reference()
+
+					ref.set().should.equal(ref)
 				})
 			})
 		})
