@@ -368,6 +368,15 @@
 					sut.reference().setPriority().should.be.a('promise')
 				})
 			})
+			describe('setWithPriority', function(){
+				it('should have an setWithPriority function', function(){
+					sut.reference().should.have.property('setWithPriority').a('function')
+				})
+
+				it('should return the reference', function(){
+					sut.reference().setWithPriority().should.be.a('promise')
+				})
+			})
 		})
 	})
 }())
