@@ -330,6 +330,16 @@
 				it('should use the default key generator if none suplied', function(){
 					sut.reference().push({}).key.should.equal('someKey1')
 				})
+
+				it('should use the supplied key generator when supplied', function(){
+					const subject = sut.reference(	{
+														pushGenerator: function* words(){
+															yield 'one';
+															yield 'two';}
+													})
+					subject.push({}).key.should.equal('one')
+					subject.push({}).key.should.equal('two')
+				})
 			})
 		})
 	})
