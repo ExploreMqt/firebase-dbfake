@@ -388,6 +388,18 @@
 					ref.startAt().should.equal(ref)
 				})
 			})
+			describe('toString:', function(){
+				it('should have a toString function', function(){
+					sut.reference().should.have.property('toString').a('function')
+				})
+
+				it('should return a string', function(){
+					sut.reference().toString().should.be.a('string')
+				})
+				it('should return a string defining the path to the ref in the document', function(){
+					sut.reference().toString().should.equal('path/someKey')
+				})
+			})
 		})
 	})
 }())
