@@ -377,6 +377,17 @@
 					sut.reference().setWithPriority().should.be.a('promise')
 				})
 			})
+			describe('startAt', function(){
+				it('should have an startAt function', function(){
+					sut.reference().should.have.property('startAt').a('function')
+				})
+
+				it('should return the reference', function(){
+					const ref = sut.reference()
+
+					ref.startAt().should.equal(ref)
+				})
+			})
 		})
 	})
 }())
