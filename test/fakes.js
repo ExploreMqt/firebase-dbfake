@@ -419,6 +419,15 @@
 					})
 				})
 			})
+			describe('update', function(){
+				it('should have a update function', function(){
+					sut.reference().should.have.property('update').a('function')
+				})
+
+				it('should return a update', function(){
+					sut.reference().update().should.be.a('promise')
+				})
+			})
 		})
 	})
 }())
