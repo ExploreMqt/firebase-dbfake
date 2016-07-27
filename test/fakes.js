@@ -400,6 +400,25 @@
 					sut.reference().toString().should.equal('path/someKey')
 				})
 			})
+			describe('transaction', function(){
+				it('should have a transaction function', function(){
+					sut.reference().should.have.property('transaction').a('function')
+				})
+
+				it('should return a promise', function(){
+					sut.reference().transaction().should.be.a('promise')
+				})
+
+				it('should resolve an object that contains a snapshot', function(done){
+					sut.reference().transaction()
+					.then(result => {
+						result.should.have.property('committed')
+							.that.is.true
+						result.should.have.property('snapshot')
+						done()
+					})
+				})
+			})
 		})
 	})
 }())
