@@ -4,8 +4,9 @@
   "description": "A fake object library to aid in unit testing code that has Firebase as a data store.",
   "main": ".lib/fakes.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha 'test/**/*.js' -w",
-    "lint": "eslint ./lib ./test ./data"
+    "docs": "rm -rf ./docs && jsdoc ./lib/*.js -d ./docs",
+    "lint": "eslint ./lib ./test ./data",
+    "test": "./node_modules/mocha/bin/mocha 'test/**/*.js' -w"
   },
   "keywords": [
     "['firebase'",
