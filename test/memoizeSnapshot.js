@@ -17,26 +17,23 @@
 import test from 'ava'
 import sut from '../lib/fakes.js'
 
-test('should return a promise', t => {
-    t.is(typeof(sut.resolveSnapshot({}).then), 'function')
+test('should produce a function', t => {
+    t.is(typeof(sut.memoizeSnapshot({})), 'function')
 })
 
-test('should resolve a snapshot', t => {
-    return sut.resolveSnapshot({})
-            .then(result => {
-                t.is(typeof(result.exists), 'function')
-                t.is(typeof(result.key), 'string')
-                t.is(typeof(result.ref), 'object')
-                t.is(typeof(result.val), 'function')
-            })
+test('should return a promise from the result', t => {
+    t.is(typeof(sut.memoizeSnapshot({})().then), 'function')
 })
 
-test('should resovle to the value provided', t => {
+test('should resolve the same value multiple times', t => {
     const	x = {},
-            key = 'mykey'
-    return sut.resolveSnapshot(x, key)
-            .then(snapshot => {
+            memoized = sut.memoizeSnapshot(x)
+	return memoized()
+	        .then(snapshot => {
                 t.is(snapshot.val(), x)
-                t.is(snapshot.key, key)
+                return memoized()
+                        .then(snapshot => {
+                            t.is(snapshot.val(), x)
+                        })
             })
 })

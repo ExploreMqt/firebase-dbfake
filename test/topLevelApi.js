@@ -20,3 +20,11 @@ import sut from '../lib/fakes.js'
 test('should have a snapshot function', t => {
     t.is(typeof(sut.snapshot), 'function')
 })
+
+test('should have a resolveSnapshot function', t => {
+    t.is(typeof(sut.resolveSnapshot), 'function')
+})
+
+test('should have a memoizeSnapshot function', t => {
+    t.is(typeof(sut.memoizeSnapshot), 'function')
+})

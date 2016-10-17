@@ -25,33 +25,6 @@ test(t => t.true(true))
 
 	// describe('fakes:', function(){
 
-	// 	describe('memoizeSnapshot:', function(){
-	// 		it('should have a memoizeSnapshot function', function(){
-	// 			sut.should.have.property('memoizeSnapshot').a('function')
-	// 		})
-
-	// 		it('should produce a function', function(){
-	// 			sut.memoizeSnapshot({}).should.be.a('function')
-	// 		})
-
-	// 		it('should return a promise from the result', function(){
-	// 			sut.memoizeSnapshot({})().should.be.a('promise')
-	// 		})
-
-	// 		it('should resolve the same value multiple times', function(done){
-	// 			const	x = {},
-	// 					memoized = sut.memoizeSnapshot(x)
-	// 			memoized()
-	// 			.then(snapshot => {
-	// 				snapshot.val().should.equal(x)
-	// 				memoized()
-	// 				.then(snapshot => {
-	// 					snapshot.val().should.equal(x)
-	// 					done()
-	// 				})
-	// 			})
-	// 		})
-	// 	})
 
 	// 	describe('reference:', function(){
 	// 		it('should have a reference function', function(){
