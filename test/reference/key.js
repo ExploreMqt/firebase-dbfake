@@ -15,20 +15,16 @@
   PERFORMANCE OF THIS SOFTWARE.
 */
 import test from 'ava'
-import sut from '../lib/fakes.js'
+import sut from '../../lib/fakes.js'
 
-test('should have a snapshot function', t => {
-    t.is(typeof(sut.snapshot), 'function')
+test('should have a key property', t => {
+    t.is(typeof(sut.reference().key), 'string')
 })
 
-test('should have a resolveSnapshot function', t => {
-    t.is(typeof(sut.resolveSnapshot), 'function')
+test('should default the key if not supplied', t => {
+    t.is(sut.reference().key, 'someKey')
 })
 
-test('should have a memoizeSnapshot function', t => {
-    t.is(typeof(sut.memoizeSnapshot), 'function')
-})
-
-test('should have a reference function', t => {
-    t.is(typeof(sut.reference), 'function')
+test('should use the key supplied', t => {
+    t.is(sut.reference({key: 'foo'}).key, 'foo')
 })
