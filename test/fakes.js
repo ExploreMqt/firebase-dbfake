@@ -24,39 +24,6 @@ test(t => t.true(true))
 	// chai.should()
 
 	// describe('fakes:', function(){
-	// 	describe('snapshot:', function(){
-
-	// 	describe('resolveSnapshot:', function (){
-	// 		it('should have a resolveSnapshot function', function (){
-	// 			sut.should.have.property('resolveSnapshot').a('function')
-	// 		})
-
-	// 		it('should return a promise', function(){
-	// 			sut.resolveSnapshot({}).should.be.a('promise')
-	// 		})
-
-	// 		it('should resolve a snapshot', function(done){
-	// 			sut.resolveSnapshot({})
-	// 			.then(result => {
-	// 				result.should.have.property('exists').a('function')
-	// 				result.should.have.property('key').a('string')
-	// 				result.should.have.property('ref').a('object')
-	// 				result.should.have.property('val').a('function')
-	// 				done()
-	// 			})
-	// 		})
-
-	// 		it('should resovle to the value provided', function(done){
-	// 			const	x = {},
-	// 					key = 'mykey'
-	// 			sut.resolveSnapshot(x, key)
-	// 			.then(snapshot => {
-	// 				snapshot.val().should.equal(x)
-	// 				snapshot.key.should.equal(key)
-	// 				done()
-	// 			})
-	// 		})
-	// 	})
 
 	// 	describe('memoizeSnapshot:', function(){
 	// 		it('should have a memoizeSnapshot function', function(){
