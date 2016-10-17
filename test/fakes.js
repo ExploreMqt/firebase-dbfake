@@ -27,16 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', function(){
-	// 		describe('parent:', function(){
-	// 			it('should have a parent property', function(){
-	// 				sut.reference().should.have.property('parent').a('object')
-	// 			})
-
-	// 			it('should allow you to pass in a parent', function(){
-	// 				const myParent = {}
-	// 				sut.reference({parent: myParent}).parent.should.equal(myParent)
-	// 			})
-	// 		})
 	// 		describe('root:', function(){
 	// 			it('should have a root property', function(){
 	// 				sut.reference().should.have.property('root').a('string')
