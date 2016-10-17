@@ -27,19 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', function(){
-	// 		describe('root:', function(){
-	// 			it('should have a root property', function(){
-	// 				sut.reference().should.have.property('root').a('string')
-	// 			})
-
-	// 			it('should default to the docs value for an example', function(){
-	// 				sut.reference().root.should.equal('https://sample-app.firebaseio.com')
-	// 			})
-
-	// 			it('should let the caller override the value', function(){
-	// 				sut.reference({root: 'http://superior.firebaseio.com'}).root.should.equal('http://superior.firebaseio.com')
-	// 			})
-	// 		})
 	// 		describe('child:', function(){
 	// 			it('should have a child function', function(){
 	// 				sut.reference().should.have.property('child').a('function')
