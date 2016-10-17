@@ -26,21 +26,6 @@ test(t => t.true(true))
 	// describe('fakes:', function(){
 	// 	describe('snapshot:', function(){
 
-	// 		describe('key', function(){
-	// 			it('should have a key property', function(){
-	// 				sut.snapshot({}).should.have.property('key').a('string')
-	// 			})
-
-	// 			it('should default to somekey when not provided', function(){
-	// 				sut.snapshot({}).should.have.property('key')
-	// 					.that.equals('someKey')
-	// 			})
-
-	// 			it('should return the provided key if given', function(){
-	// 				sut.snapshot({}, 'abc').key.should.equal('abc')
-	// 			})
-	// 		})
-
 	// 		describe('ref', function(){
 	// 			it('should have a ref property', function(){
 	// 				sut.snapshot({}).should.have.property('ref').a('object')
