@@ -3,117 +3,94 @@
   Copyright (c) [2016], [Jim Argeropoulos]
   
   Permission to use, copy, modify, and/or distribute this software for any 
-  purpose with or without fee is hereby granted, provided that the above 
+  purpose wtesth or wtesthout fee is hereby granted, provided that the above 
   copyright notice and this permission notice appear in all copies.
   
-  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH 
-  REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND 
-  FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, 
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WtestH 
+  REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILtestY AND 
+  FtestNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, 
   INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM 
-  LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR 
-  OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR 
+  LOSS OF USE, DATA OR PROFtestS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR 
+  OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WtestH THE USE OR 
   PERFORMANCE OF THIS SOFTWARE.
 */
 import test from 'ava'
 test(t => t.true(true))
 
-// (function(){
+// (t => {
 // 	'use strict'
 	// const	chai = require('chai'),
 	// 		sut = require('../lib/fakes.js')
 	// chai.should()
 
-	// describe('fakes:', function(){
+	// describe('fakes:', t => {
 
 
-	// 	describe('reference:', function(){
-	// 		describe('child:', function(){
-	// 			it('should have a child function', function(){
-	// 				sut.reference().should.have.property('child').a('function')
-	// 			})
-
-	// 			it('should return a reference with the key given', function(){
-	// 				const	parent = sut.reference()
-	// 				const	child = parent.child('eino')
-
-	// 				child.should.have.property('key')
-	// 					.that.equals('eino')
-	// 				child.should.have.property('root')
-	// 			})
-
-	// 			it('should return a reference with the correct parent', function(){
-	// 				//Yeah, I know too much implementation for a fake, but...
-	// 				const	parent = sut.reference()
-	// 				const	child = parent.child('eino')
-
-	// 				child.should.have.property('parent')
-	// 					.that.equals(parent)
-	// 			})
-	// 		})
-	// 		describe('endAt', function(){
-	// 			it('should have an endAt function', function(){
+	// 	describe('reference:', t => {
+	// 		describe('endAt', t => {
+	// 			test('should have an endAt function', t => {
 	// 				sut.reference().should.have.property('endAt').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
+	// 			test('should return the reference', t => {
 	// 				const ref = sut.reference()
 
 	// 				ref.endAt().should.equal(ref)
 	// 			})
 	// 		})
-	// 		describe('equalTo', function(){
-	// 			it('should have an equalTo function', function(){
+	// 		describe('equalTo', t => {
+	// 			test('should have an equalTo function', t => {
 	// 				sut.reference().should.have.property('equalTo').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
+	// 			test('should return the reference', t => {
 	// 				const ref = sut.reference()
 
 	// 				ref.equalTo().should.equal(ref)
 	// 			})
 	// 		})
-	// 		describe('limitToFirst', function(){
-	// 			it('should have an limitToFirst function', function(){
-	// 				sut.reference().should.have.property('limitToFirst').a('function')
+	// 		describe('limtestToFirst', t => {
+	// 			test('should have an limtestToFirst function', t => {
+	// 				sut.reference().should.have.property('limtestToFirst').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
+	// 			test('should return the reference', t => {
 	// 				const ref = sut.reference()
 
-	// 				ref.limitToFirst().should.equal(ref)
+	// 				ref.limtestToFirst().should.equal(ref)
 	// 			})
 	// 		})
-	// 		describe('limitToLast', function(){
-	// 			it('should have an limitToLast function', function(){
-	// 				sut.reference().should.have.property('limitToLast').a('function')
+	// 		describe('limtestToLast', t => {
+	// 			test('should have an limtestToLast function', t => {
+	// 				sut.reference().should.have.property('limtestToLast').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
+	// 			test('should return the reference', t => {
 	// 				const ref = sut.reference()
 
-	// 				ref.limitToLast().should.equal(ref)
+	// 				ref.limtestToLast().should.equal(ref)
 	// 			})
 	// 		})
-	// 		describe('off', function(){
-	// 			it('should have an off function', function(){
+	// 		describe('off', t => {
+	// 			test('should have an off function', t => {
 	// 				sut.reference().should.have.property('off').a('function')
 	// 			})
 	// 		})
-	// 		describe('on', function(){
-	// 			it('should have an on function', function(){
+	// 		describe('on', t => {
+	// 			test('should have an on function', t => {
 	// 				sut.reference().should.have.property('on').a('function')
 	// 			})
 	// 		})
-	// 		describe('once', function(){
-	// 			it('should have an once function', function(){
+	// 		describe('once', t => {
+	// 			test('should have an once function', t => {
 	// 				sut.reference().should.have.property('once').a('function')
 	// 			})
 
-	// 			it('should return a promise', function(){
+	// 			test('should return a promise', t => {
 	// 				sut.reference().once().should.be.a('promise')
 	// 			})
 
-	// 			it('should resolve a snapshot', function(done){
+	// 			test('should resolve a snapshot', function(done){
 	// 				sut.reference().once().then(snapshot => {
 	// 					snapshot.should.have.property('exists').a('function')
 	// 					snapshot.should.have.property('key').a('string')
@@ -122,66 +99,66 @@ test(t => t.true(true))
 	// 				})
 	// 			})
 	// 		})
-	// 		describe('onDisconnect', function(){
+	// 		describe('onDisconnect', t => {
 	// 			//todo
 	// 		})
-	// 		describe('orderByChild', function(){
-	// 			it('should have an orderByChild function', function(){
+	// 		describe('orderByChild', t => {
+	// 			test('should have an orderByChild function', t => {
 	// 				sut.reference().should.have.property('orderByChild').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
+	// 			test('should return the reference', t => {
 	// 				const ref = sut.reference()
 
 	// 				ref.orderByChild().should.equal(ref)
 	// 			})
 	// 		})
-	// 		describe('orderByKey', function(){
-	// 			it('should have an orderByKey function', function(){
+	// 		describe('orderByKey', t => {
+	// 			test('should have an orderByKey function', t => {
 	// 				sut.reference().should.have.property('orderByKey').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
+	// 			test('should return the reference', t => {
 	// 				const ref = sut.reference()
 
 	// 				ref.orderByKey().should.equal(ref)
 	// 			})
 	// 		})
-	// 		describe('orderByPriority', function(){
-	// 			it('should have an orderByPriority function', function(){
-	// 				sut.reference().should.have.property('orderByPriority').a('function')
+	// 		describe('orderByPriortesty', t => {
+	// 			test('should have an orderByPriortesty function', t => {
+	// 				sut.reference().should.have.property('orderByPriortesty').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
+	// 			test('should return the reference', t => {
 	// 				const ref = sut.reference()
 
-	// 				ref.orderByPriority().should.equal(ref)
+	// 				ref.orderByPriortesty().should.equal(ref)
 	// 			})
 	// 		})
-	// 		describe('orderByValue', function(){
-	// 			it('should have an orderByValue function', function(){
+	// 		describe('orderByValue', t => {
+	// 			test('should have an orderByValue function', t => {
 	// 				sut.reference().should.have.property('orderByValue').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
+	// 			test('should return the reference', t => {
 	// 				const ref = sut.reference()
 
 	// 				ref.orderByValue().should.equal(ref)
 	// 			})
 	// 		})
-	// 		describe('push', function(){
-	// 			it('should have an push function', function(){
+	// 		describe('push', t => {
+	// 			test('should have an push function', t => {
 	// 				sut.reference().should.have.property('push').a('function')
 	// 			})
 
-	// 			it('should create a reference', function(){
+	// 			test('should create a reference', t => {
 	// 				const	parent = sut.reference(),
 	// 						child = parent.push({})
 
 	// 				parent.should.not.equal(child)
 	// 			})
 
-	// 			it('should have a parent property that points to creator', function(){
+	// 			test('should have a parent property that points to creator', t => {
 	// 				const	parent = sut.reference(),
 	// 						child = parent.push({})
 	// 				parent.should.not.equal(child)
@@ -189,11 +166,11 @@ test(t => t.true(true))
 	// 					.that.equals(parent)
 	// 			})
 
-	// 			it('should use the default key generator if none suplied', function(){
+	// 			test('should use the default key generator if none suplied', t => {
 	// 				sut.reference().push({}).key.should.equal('someKey1')
 	// 			})
 
-	// 			it('should use the supplied key generator when supplied', function(){
+	// 			test('should use the supplied key generator when supplied', t => {
 	// 				const subject = sut.reference(	{
 	// 													pushGenerator: function* words(){
 	// 														yield 'one';
@@ -203,90 +180,90 @@ test(t => t.true(true))
 	// 				subject.push({}).key.should.equal('two')
 	// 			})
 	// 		})
-	// 		describe('remove', function(){
-	// 			it('should have an remove function', function(){
+	// 		describe('remove', t => {
+	// 			test('should have an remove function', t => {
 	// 				sut.reference().should.have.property('remove').a('function')
 	// 			})
 
-	// 			it('should resolve a promise', function(){
+	// 			test('should resolve a promise', t => {
 	// 				sut.reference().remove().should.be.a('promise')
 	// 			})
 	// 		})
-	// 		describe('set', function(){
-	// 			it('should have an set function', function(){
+	// 		describe('set', t => {
+	// 			test('should have an set function', t => {
 	// 				sut.reference().should.have.property('set').a('function')
 	// 			})
 
-	// 			it('should return a promise', function(){
+	// 			test('should return a promise', t => {
 	// 				sut.reference().set().should.be.a('promise')
 	// 			})
 	// 		})
-	// 		describe('setPriority', function(){
-	// 			it('should have an setPriority function', function(){
-	// 				sut.reference().should.have.property('setPriority').a('function')
+	// 		describe('setPriortesty', t => {
+	// 			test('should have an setPriortesty function', t => {
+	// 				sut.reference().should.have.property('setPriortesty').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
-	// 				sut.reference().setPriority().should.be.a('promise')
+	// 			test('should return the reference', t => {
+	// 				sut.reference().setPriortesty().should.be.a('promise')
 	// 			})
 	// 		})
-	// 		describe('setWithPriority', function(){
-	// 			it('should have an setWithPriority function', function(){
-	// 				sut.reference().should.have.property('setWithPriority').a('function')
+	// 		describe('setWtesthPriortesty', t => {
+	// 			test('should have an setWtesthPriortesty function', t => {
+	// 				sut.reference().should.have.property('setWtesthPriortesty').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
-	// 				sut.reference().setWithPriority().should.be.a('promise')
+	// 			test('should return the reference', t => {
+	// 				sut.reference().setWtesthPriortesty().should.be.a('promise')
 	// 			})
 	// 		})
-	// 		describe('startAt', function(){
-	// 			it('should have an startAt function', function(){
+	// 		describe('startAt', t => {
+	// 			test('should have an startAt function', t => {
 	// 				sut.reference().should.have.property('startAt').a('function')
 	// 			})
 
-	// 			it('should return the reference', function(){
+	// 			test('should return the reference', t => {
 	// 				const ref = sut.reference()
 
 	// 				ref.startAt().should.equal(ref)
 	// 			})
 	// 		})
-	// 		describe('toString:', function(){
-	// 			it('should have a toString function', function(){
+	// 		describe('toString:', t => {
+	// 			test('should have a toString function', t => {
 	// 				sut.reference().should.have.property('toString').a('function')
 	// 			})
 
-	// 			it('should return a string', function(){
+	// 			test('should return a string', t => {
 	// 				sut.reference().toString().should.be.a('string')
 	// 			})
-	// 			it('should return a string defining the path to the ref in the document', function(){
+	// 			test('should return a string defining the path to the ref in the document', t => {
 	// 				sut.reference().toString().should.equal('path/someKey')
 	// 			})
 	// 		})
-	// 		describe('transaction', function(){
-	// 			it('should have a transaction function', function(){
+	// 		describe('transaction', t => {
+	// 			test('should have a transaction function', t => {
 	// 				sut.reference().should.have.property('transaction').a('function')
 	// 			})
 
-	// 			it('should return a promise', function(){
+	// 			test('should return a promise', t => {
 	// 				sut.reference().transaction().should.be.a('promise')
 	// 			})
 
-	// 			it('should resolve an object that contains a snapshot', function(done){
+	// 			test('should resolve an object that contains a snapshot', function(done){
 	// 				sut.reference().transaction()
 	// 				.then(result => {
-	// 					result.should.have.property('committed')
+	// 					result.should.have.property('commtestted')
 	// 						.that.is.true
 	// 					result.should.have.property('snapshot')
 	// 					done()
 	// 				})
 	// 			})
 	// 		})
-	// 		describe('update', function(){
-	// 			it('should have a update function', function(){
+	// 		describe('update', t => {
+	// 			test('should have a update function', t => {
 	// 				sut.reference().should.have.property('update').a('function')
 	// 			})
 
-	// 			it('should return a update', function(){
+	// 			test('should return a update', t => {
 	// 				sut.reference().update().should.be.a('promise')
 	// 			})
 	// 		})
