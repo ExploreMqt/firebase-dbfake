@@ -6,7 +6,7 @@
   "scripts": {
     "docs": "rm -rf ./docs && jsdoc ./lib/*.js -d ./docs",
     "lint": "eslint ./lib ./test ./data",
-    "test": "./node_modules/mocha/bin/mocha 'test/**/*.js' -w"
+    "test": "ava test/**/*.js --watch"
   },
   "keywords": [
     "['firebase'",
@@ -20,10 +20,8 @@
   "author": "\"Jim Argeropoulos <tenholeharp@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^3.0.1",
-    "mocha": "^3.0.0"
+    "ava": "^0.16.0",
+    "eslint": "^3.0.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
