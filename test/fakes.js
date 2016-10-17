@@ -26,13 +26,6 @@ test(t => t.true(true))
 	// describe('fakes:', function(){
 	// 	describe('snapshot:', function(){
 
-	// 		describe('ref', function(){
-	// 			it('should have a ref property', function(){
-	// 				sut.snapshot({}).should.have.property('ref').a('object')
-	// 			})
-	// 		})
-	// 	})
-
 	// 	describe('resolveSnapshot:', function (){
 	// 		it('should have a resolveSnapshot function', function (){
 	// 			sut.should.have.property('resolveSnapshot').a('function')

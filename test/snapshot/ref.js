@@ -17,14 +17,6 @@
 import test from 'ava'
 import sut from '../../lib/fakes.js'
 
-test('should have a key property', t => {
-    t.is(typeof(sut.snapshot({}).key), 'string')
-})
-
-test('should default to someKey when not provided', t => {
-    t.is(sut.snapshot({}).key, 'someKey')
-})
-
-test('should return the provided key if given', t => {
-    t.is(sut.snapshot({}, 'abc').key, 'abc')
+test('should have a ref property', t => {
+    t.is(typeof(sut.snapshot({}).ref), 'object')
 })
