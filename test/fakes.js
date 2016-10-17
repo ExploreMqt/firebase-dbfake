@@ -26,20 +26,6 @@ test(t => t.true(true))
 	// describe('fakes:', function(){
 	// 	describe('snapshot:', function(){
 
-	// 		describe('expects:', function(){
-	// 			it('should have an exists function', function(){
-	// 				sut.snapshot({}).should.have.property('exists').a('function')
-	// 			})
-
-	// 			it('should return true when there is a value passed to snapshot', function(){
-	// 				sut.snapshot({}).exists().should.be.true
-	// 			})
-
-	// 			it('should return false when undefined is passed to snapshot', function(){
-	// 				sut.snapshot(undefined).exists().should.be.false
-	// 			})
-	// 		})
-
 	// 		describe('key', function(){
 	// 			it('should have a key property', function(){
 	// 				sut.snapshot({}).should.have.property('key').a('string')
