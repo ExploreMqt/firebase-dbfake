@@ -27,24 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('once', t => {
-	// 			test('should have an once function', t => {
-	// 				sut.reference().should.have.property('once').a('function')
-	// 			})
-
-	// 			test('should return a promise', t => {
-	// 				sut.reference().once().should.be.a('promise')
-	// 			})
-
-	// 			test('should resolve a snapshot', function(done){
-	// 				sut.reference().once().then(snapshot => {
-	// 					snapshot.should.have.property('exists').a('function')
-	// 					snapshot.should.have.property('key').a('string')
-	// 					snapshot.should.have.property('val').a('function')
-	// 					done()
-	// 				})
-	// 			})
-	// 		})
 	// 		describe('onDisconnect', t => {
 	// 			//todo
 	// 		})
