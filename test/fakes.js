@@ -27,11 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('on', t => {
-	// 			test('should have an on function', t => {
-	// 				sut.reference().should.have.property('on').a('function')
-	// 			})
-	// 		})
 	// 		describe('once', t => {
 	// 			test('should have an once function', t => {
 	// 				sut.reference().should.have.property('once').a('function')
