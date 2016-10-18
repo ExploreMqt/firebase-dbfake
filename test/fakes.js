@@ -27,17 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('limtestToFirst', t => {
-	// 			test('should have an limtestToFirst function', t => {
-	// 				sut.reference().should.have.property('limtestToFirst').a('function')
-	// 			})
-
-	// 			test('should return the reference', t => {
-	// 				const ref = sut.reference()
-
-	// 				ref.limtestToFirst().should.equal(ref)
-	// 			})
-	// 		})
 	// 		describe('limtestToLast', t => {
 	// 			test('should have an limtestToLast function', t => {
 	// 				sut.reference().should.have.property('limtestToLast').a('function')
