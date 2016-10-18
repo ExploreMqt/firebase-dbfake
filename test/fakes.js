@@ -27,17 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('endAt', t => {
-	// 			test('should have an endAt function', t => {
-	// 				sut.reference().should.have.property('endAt').a('function')
-	// 			})
-
-	// 			test('should return the reference', t => {
-	// 				const ref = sut.reference()
-
-	// 				ref.endAt().should.equal(ref)
-	// 			})
-	// 		})
 	// 		describe('equalTo', t => {
 	// 			test('should have an equalTo function', t => {
 	// 				sut.reference().should.have.property('equalTo').a('function')
