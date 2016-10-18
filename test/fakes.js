@@ -27,9 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('onDisconnect', t => {
-	// 			//todo
-	// 		})
 	// 		describe('remove', t => {
 	// 			test('should have an remove function', t => {
 	// 				sut.reference().should.have.property('remove').a('function')
