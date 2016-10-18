@@ -17,14 +17,12 @@
 import test from 'ava'
 import sut from '../../lib/fakes.js'
 
-test('should have an exists function', t => {
-    t.is(typeof(sut.snapshot({}).exists), 'function')
+test('should have an limitToLast function', t => {
+    t.is(typeof(sut.reference().limitToLast), 'function')
 })
 
-test('should return true when there is a value passed to snapshot', t => {
-    t.true(sut.snapshot({}).exists())
-})
+test('should return the reference', t => {
+    const ref = sut.reference()
 
-test('should return false when undefined is passed to snapshot', t => {
-    t.false(sut.snapshot(undefined).exists())
+    t.is(ref.limitToLast(), ref)
 })

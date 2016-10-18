@@ -1,6 +1,6 @@
 /*
   ISC License
-  Copyright (c) [2016], [Jim Argeropoulos]
+  Copyright (c) 2016, Jim Argeropoulos
   
   Permission to use, copy, modify, and/or distribute this software for any 
   purpose wtesth or wtesthout fee is hereby granted, provided that the above 
@@ -27,17 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('limtestToLast', t => {
-	// 			test('should have an limtestToLast function', t => {
-	// 				sut.reference().should.have.property('limtestToLast').a('function')
-	// 			})
-
-	// 			test('should return the reference', t => {
-	// 				const ref = sut.reference()
-
-	// 				ref.limtestToLast().should.equal(ref)
-	// 			})
-	// 		})
 	// 		describe('off', t => {
 	// 			test('should have an off function', t => {
 	// 				sut.reference().should.have.property('off').a('function')
