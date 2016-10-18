@@ -30,40 +30,6 @@ test(t => t.true(true))
 	// 		describe('onDisconnect', t => {
 	// 			//todo
 	// 		})
-	// 		describe('push', t => {
-	// 			test('should have an push function', t => {
-	// 				sut.reference().should.have.property('push').a('function')
-	// 			})
-
-	// 			test('should create a reference', t => {
-	// 				const	parent = sut.reference(),
-	// 						child = parent.push({})
-
-	// 				parent.should.not.equal(child)
-	// 			})
-
-	// 			test('should have a parent property that points to creator', t => {
-	// 				const	parent = sut.reference(),
-	// 						child = parent.push({})
-	// 				parent.should.not.equal(child)
-	// 				child.should.have.property('parent')
-	// 					.that.equals(parent)
-	// 			})
-
-	// 			test('should use the default key generator if none suplied', t => {
-	// 				sut.reference().push({}).key.should.equal('someKey1')
-	// 			})
-
-	// 			test('should use the supplied key generator when supplied', t => {
-	// 				const subject = sut.reference(	{
-	// 													pushGenerator: function* words(){
-	// 														yield 'one';
-	// 														yield 'two';}
-	// 												})
-	// 				subject.push({}).key.should.equal('one')
-	// 				subject.push({}).key.should.equal('two')
-	// 			})
-	// 		})
 	// 		describe('remove', t => {
 	// 			test('should have an remove function', t => {
 	// 				sut.reference().should.have.property('remove').a('function')
