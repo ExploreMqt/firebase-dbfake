@@ -27,15 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('remove', t => {
-	// 			test('should have an remove function', t => {
-	// 				sut.reference().should.have.property('remove').a('function')
-	// 			})
-
-	// 			test('should resolve a promise', t => {
-	// 				sut.reference().remove().should.be.a('promise')
-	// 			})
-	// 		})
 	// 		describe('set', t => {
 	// 			test('should have an set function', t => {
 	// 				sut.reference().should.have.property('set').a('function')
