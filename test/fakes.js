@@ -27,18 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('toString:', t => {
-	// 			test('should have a toString function', t => {
-	// 				sut.reference().should.have.property('toString').a('function')
-	// 			})
-
-	// 			test('should return a string', t => {
-	// 				sut.reference().toString().should.be.a('string')
-	// 			})
-	// 			test('should return a string defining the path to the ref in the document', t => {
-	// 				sut.reference().toString().should.equal('path/someKey')
-	// 			})
-	// 		})
 	// 		describe('transaction', t => {
 	// 			test('should have a transaction function', t => {
 	// 				sut.reference().should.have.property('transaction').a('function')
