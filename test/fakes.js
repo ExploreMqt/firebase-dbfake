@@ -27,25 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('transaction', t => {
-	// 			test('should have a transaction function', t => {
-	// 				sut.reference().should.have.property('transaction').a('function')
-	// 			})
-
-	// 			test('should return a promise', t => {
-	// 				sut.reference().transaction().should.be.a('promise')
-	// 			})
-
-	// 			test('should resolve an object that contains a snapshot', function(done){
-	// 				sut.reference().transaction()
-	// 				.then(result => {
-	// 					result.should.have.property('commtestted')
-	// 						.that.is.true
-	// 					result.should.have.property('snapshot')
-	// 					done()
-	// 				})
-	// 			})
-	// 		})
 	// 		describe('update', t => {
 	// 			test('should have a update function', t => {
 	// 				sut.reference().should.have.property('update').a('function')
