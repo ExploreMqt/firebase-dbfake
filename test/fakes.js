@@ -27,15 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('setWtesthPriortesty', t => {
-	// 			test('should have an setWtesthPriortesty function', t => {
-	// 				sut.reference().should.have.property('setWtesthPriortesty').a('function')
-	// 			})
-
-	// 			test('should return the reference', t => {
-	// 				sut.reference().setWtesthPriortesty().should.be.a('promise')
-	// 			})
-	// 		})
 	// 		describe('startAt', t => {
 	// 			test('should have an startAt function', t => {
 	// 				sut.reference().should.have.property('startAt').a('function')
