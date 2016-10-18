@@ -27,17 +27,6 @@ test(t => t.true(true))
 
 
 	// 	describe('reference:', t => {
-	// 		describe('startAt', t => {
-	// 			test('should have an startAt function', t => {
-	// 				sut.reference().should.have.property('startAt').a('function')
-	// 			})
-
-	// 			test('should return the reference', t => {
-	// 				const ref = sut.reference()
-
-	// 				ref.startAt().should.equal(ref)
-	// 			})
-	// 		})
 	// 		describe('toString:', t => {
 	// 			test('should have a toString function', t => {
 	// 				sut.reference().should.have.property('toString').a('function')
