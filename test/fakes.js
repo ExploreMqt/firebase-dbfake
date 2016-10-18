@@ -30,17 +30,6 @@ test(t => t.true(true))
 	// 		describe('onDisconnect', t => {
 	// 			//todo
 	// 		})
-	// 		describe('orderByChild', t => {
-	// 			test('should have an orderByChild function', t => {
-	// 				sut.reference().should.have.property('orderByChild').a('function')
-	// 			})
-
-	// 			test('should return the reference', t => {
-	// 				const ref = sut.reference()
-
-	// 				ref.orderByChild().should.equal(ref)
-	// 			})
-	// 		})
 	// 		describe('orderByKey', t => {
 	// 			test('should have an orderByKey function', t => {
 	// 				sut.reference().should.have.property('orderByKey').a('function')
