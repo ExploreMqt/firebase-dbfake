@@ -18,9 +18,9 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have a update function', t => {
-    t.is(typeof(sut.reference().update), 'function')
+	t.is(typeof(sut.reference().update), 'function')
 })
 
 test('should return a update', t => {
-    t.is(typeof(sut.reference().update().then), 'function')
+	t.is(typeof(sut.reference().update().then), 'function')
 })

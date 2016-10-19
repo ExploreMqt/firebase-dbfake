@@ -18,17 +18,17 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have a transaction function', t => {
-    t.is(typeof(sut.reference().transaction), 'function')
+	t.is(typeof(sut.reference().transaction), 'function')
 })
 
 test('should return a promise', t => {
-    t.is(typeof(sut.reference().transaction().then), 'function')
+	t.is(typeof(sut.reference().transaction().then), 'function')
 })
 
 test('should resolve an object that contains a snapshot', t => {
-    sut.reference().transaction()
-    .then(result => {
-        t.true(result.committed)
-        t.truthy(result.snapshot)
-    })
+	sut.reference().transaction()
+	.then(result => {
+		t.true(result.committed)
+		t.truthy(result.snapshot)
+	})
 })

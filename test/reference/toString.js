@@ -18,12 +18,12 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have a toString function', t => {
-    t.is(typeof(sut.reference().toString), 'function')
+	t.is(typeof(sut.reference().toString), 'function')
 })
 
 test('should return a string', t => {
-    t.is(typeof(sut.reference().toString()), 'string')
+	t.is(typeof(sut.reference().toString()), 'string')
 })
 test('should return a string defining the path to the ref in the document', t => {
-    t.is(sut.reference().toString(), 'path/someKey')
+	t.is(sut.reference().toString(), 'path/someKey')
 })

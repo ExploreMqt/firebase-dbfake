@@ -18,11 +18,11 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have an orderByValue function', t => {
-    t.is(typeof(sut.reference().orderByValue), 'function')
+	t.is(typeof(sut.reference().orderByValue), 'function')
 })
 
 test('should return the reference', t => {
-    const ref = sut.reference()
+	const ref = sut.reference()
 
-    t.is(ref.orderByValue(), ref)
+	t.is(ref.orderByValue(), ref)
 })

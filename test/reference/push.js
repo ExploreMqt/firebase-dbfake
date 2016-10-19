@@ -18,33 +18,34 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have an push function', t => {
-    t.is(typeof(sut.reference().push), 'function')
+	t.is(typeof(sut.reference().push), 'function')
 })
 
 test('should create a reference', t => {
-    const	parent = sut.reference(),
-            child = parent.push({})
+	const parent = sut.reference(),
+		child = parent.push({})
 
-    t.not(parent, child)
+	t.not(parent, child)
 })
 
 test('should have a parent property that points to creator', t => {
-    const	parent = sut.reference(),
-            child = parent.push({})
-    t.not(parent, child)
-    t.is(child.parent, parent)
+	const parent = sut.reference(),
+		child = parent.push({})
+	t.not(parent, child)
+	t.is(child.parent, parent)
 })
 
 test('should use the default key generator if none suplied', t => {
-    t.is(sut.reference().push({}).key, 'someKey1')
+	t.is(sut.reference().push({}).key, 'someKey1')
 })
 
 test('should use the supplied key generator when supplied', t => {
-    const subject = sut.reference(	{
-                                        pushGenerator: function* words(){
-                                            yield 'one';
-                                            yield 'two';}
-                                    })
-    t.is(subject.push({}).key, 'one')
-    t.is(subject.push({}).key, 'two')
+	const subject = sut.reference(	{
+		pushGenerator: function* words(){
+			yield 'one'
+			yield 'two'}
+	})
+	
+	t.is(subject.push({}).key, 'one')
+	t.is(subject.push({}).key, 'two')
 })

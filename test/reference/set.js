@@ -18,9 +18,9 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have an set function', t => {
-    t.is(typeof(sut.reference().set), 'function')
+	t.is(typeof(sut.reference().set), 'function')
 })
 
 test('should resolve a promise', t => {
-    t.is(typeof(sut.reference().set().then), 'function')
+	t.is(typeof(sut.reference().set().then), 'function')
 })

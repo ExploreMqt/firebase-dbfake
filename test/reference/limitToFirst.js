@@ -18,11 +18,11 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have an limitToFirst function', t => {
-    t.is(typeof(sut.reference().limitToFirst), 'function')
+	t.is(typeof(sut.reference().limitToFirst), 'function')
 })
 
 test('should return the reference', t => {
-    const ref = sut.reference()
+	const ref = sut.reference()
 
-    t.is(ref.limitToFirst(), ref)
+	t.is(ref.limitToFirst(), ref)
 })

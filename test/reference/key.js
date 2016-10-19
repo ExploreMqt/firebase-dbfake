@@ -18,13 +18,13 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have a key property', t => {
-    t.is(typeof(sut.reference().key), 'string')
+	t.is(typeof(sut.reference().key), 'string')
 })
 
 test('should default the key if not supplied', t => {
-    t.is(sut.reference().key, 'someKey')
+	t.is(sut.reference().key, 'someKey')
 })
 
 test('should use the key supplied', t => {
-    t.is(sut.reference({key: 'foo'}).key, 'foo')
+	t.is(sut.reference({key: 'foo'}).key, 'foo')
 })

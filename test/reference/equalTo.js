@@ -18,11 +18,11 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have an equalTo function', t => {
-    t.is(typeof(sut.reference().equalTo), 'function')
+	t.is(typeof(sut.reference().equalTo), 'function')
 })
 
 test('should return the reference', t => {
-    const ref = sut.reference()
+	const ref = sut.reference()
 
-    t.is(ref.equalTo(), ref)
+	t.is(ref.equalTo(), ref)
 })

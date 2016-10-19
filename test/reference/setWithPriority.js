@@ -18,9 +18,9 @@ import test from 'ava'
 import sut from '../../lib/fakes.js'
 
 test('should have an setWithPriority function', t => {
-    t.is(typeof(sut.reference().setWithPriority), 'function')
+	t.is(typeof(sut.reference().setWithPriority), 'function')
 })
 
 test('should resolve a promise', t => {
-    t.is(typeof(sut.reference().setWithPriority().then), 'function')
+	t.is(typeof(sut.reference().setWithPriority().then), 'function')
 })

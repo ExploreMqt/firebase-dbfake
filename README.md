@@ -23,3 +23,6 @@ It does enable you to supply your own behavior needed for your tests.
 interact with Firebase.
 * **memoizeSnapshot** a short hand for writing a function that returns a promise which resolves a snapshot. Again, used
 when mocking your data layer.
+
+
+## Example
