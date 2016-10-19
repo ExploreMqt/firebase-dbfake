@@ -12,7 +12,7 @@ you to obey this principle.
 When you call once() on a reference, you get back a promise and if all goes well that resolves to a DataSnapshot.
 The core principle that started firebase-dbfake is that you don't own once() and you should have a shim that calls it.
 The shim returns you a promise which resolves to a DataSnapshot. Once you have that in place, you can inject a
-firebase-dbfake.snapshot and unit test to your hearts delight.
+firebase-dbfake.snapshot and unit test to your hearts content.
 
 ## firebase-dbfake
 firebase-dbfake exposes four methods to help you in your unit testing:
